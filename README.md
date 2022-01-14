@@ -429,6 +429,9 @@ public class Product {
 }
 ```
 
+# Controller , Service and Repository
+![Controller Service Repository](controller-service-repository.png?raw=true)
+
 ## ProductRepository
 ```java
 import java.util.HashMap;
