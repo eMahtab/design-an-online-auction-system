@@ -98,6 +98,12 @@ public class User extends Observer {
 }
 ```
 
+## Observer
+```java
+public class Observer {
+}
+```
+
 ## Buyer 
 ```java
 import com.sun.istack.internal.NotNull;
