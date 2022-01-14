@@ -9,6 +9,19 @@
 
 4. Buyers should also be allowed to subscribe to an auction i.e. they should be notified of any change in the auction. While the auction is live, buyers can bid for the product. Buyers who bid in the auction automatically become the subscriber of that auction. The seller is always a subscriber of the auction. Whenever the auction state changes, subscribers are notified.
 
+## Features :
+
+1. Register a seller/buyer.
+2. Seller can create a new auction which will always go in DRAFT state.
+3. Seller can add product details in an auction which is in DRAFT state & can also mention the base price for the product.
+4. Seller can publish an auction given all necessary details have been added. Seller can schedule an auction while publishing the auction.
+5. Seller can view his auction details.
+6. Buyers can view any auction details.
+7. Buyers can subscribe/unsubscribe to an auction.
+8. Buyers can bid in an auction.
+9. When the auction state changes, a notification is sent to all the subscribers.
+10. Sellers/Buyers can view their latest ‘x’ notifications.
+
 ### Rough class diagram 
 ![Class Diagram](auction-system.png?raw=true)
 
