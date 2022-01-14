@@ -458,6 +458,33 @@ public class ProductRepository {
 }
 ```
 
+## BuyerRepository
+```java
+public class BuyerRepository {
+	public static Map<String, Buyer> Buyers = new HashMap<>();
+
+	// TODO - Implement thread safe lazy initialization singleton pattern.
+	private BuyerRepository() {
+		this.Buyers = new HashMap<>();
+	}
+	private static class BuyerRepositoryHolder {
+	    private static final BuyerRepository INSTANCE = new BuyerRepository();
+	}
+	public static BuyerRepository getInstance() {
+		return BuyerRepositoryHolder.INSTANCE;
+	}
+
+	public void addDataToRepository(String key, Buyer value) {
+		this.Buyers.put(key, value);
+	}
+
+	public Buyer getData(String key) {
+	       return getOrDefault(Buyers.get(key), null);
+	}
+	
+}
+```
+
 # References :
 https://www.youtube.com/watch?v=5fdKUzfMk4E
 
