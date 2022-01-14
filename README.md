@@ -180,6 +180,17 @@ public class Auction extends Publisher{
 }
 ```
 
+## AuctionState
+```java
+public enum AuctionState {
+	DRAFTED,
+	PUBLISHED,
+	STARTED,
+	END_FAILED,
+	END_SUCCESS;
+}
+```
+
 # References :
 https://www.youtube.com/watch?v=5fdKUzfMk4E
 
