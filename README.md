@@ -9,6 +9,9 @@
 
 4. Buyers should also be allowed to subscribe to an auction i.e. they should be notified of any change in the auction. While the auction is live, buyers can bid for the product. Buyers who bid in the auction automatically become the subscriber of that auction. The seller is always a subscriber of the auction. Whenever the auction state changes, subscribers are notified.
 
+### Rough class diagram 
+![Class Diagram](auction-system.png?raw=true)
+
 # References :
 https://www.youtube.com/watch?v=5fdKUzfMk4E
 https://github.com/MayV/OnlineAuctionSystem
