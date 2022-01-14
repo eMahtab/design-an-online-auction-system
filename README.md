@@ -429,6 +429,35 @@ public class Product {
 }
 ```
 
+## ProductRepository
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class ProductRepository {
+	public static Map<String, Product> products;
+
+	// TODO - Implement thread safe lazy initialization singleton pattern.
+	private ProductRepository() {
+		this.products = new HashMap<>();
+	}
+	private static class ProductRepositoryHolder {
+		private static final ProductRepository INSTANCE = new ProductRepository();
+	}
+	public static ProductRepository getInstance() {
+		return ProductRepositoryHolder.INSTANCE;
+	}
+
+	public void addProductToRepository(String productId, Product product) {
+		this.products.put(productId, product);
+	}
+
+	public Product getProduct(String productId) {
+		return products.getOrDefault(productId, null);
+	}
+}
+```
+
 # References :
 https://www.youtube.com/watch?v=5fdKUzfMk4E
 
