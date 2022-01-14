@@ -265,6 +265,16 @@ public class AuctionProduct {
 }
 ```
 
+## AuctionProductState
+```java
+public enum AuctionProductState {
+	UNBID,
+	UNSOLD,
+	SOLD,
+	FAILED;
+}
+```
+
 # References :
 https://www.youtube.com/watch?v=5fdKUzfMk4E
 
